@@ -183,7 +183,7 @@ const Contact = () => {
             </Tooltip>
             <Tooltip title="Brayden's Phone Number">
               <Typography variant="body1" sx={styles.text}>
-                <Link href="tel:+1234567890" sx={styles.link}>
+                <Link href="tel:+17094545027" sx={styles.link}>
                   <PhoneOutlined style={{ color: "#007FFF" }} />
                   +1 (709) 454-5027
                 </Link>
