@@ -60,6 +60,7 @@ const Home = () => {
     subtitle: {
       color: "lightgray",
       fontFamily: "'Lato', sans-serif",
+      fontWeight: "700",
       marginBottom: "1rem",
     },
     description: {

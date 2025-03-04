@@ -219,12 +219,13 @@ const Contact = () => {
           <Alert
             severity="success"
             sx={{
-              position: "absolute",
-              top: "0",
+              position: "fixed", // Fixed position instead of absolute
+              top: 0,
               left: "50%",
               transform: "translateX(-50%)",
               width: "fit-content",
               p: 2, // Padding for better appearance
+              zIndex: 9999, // Ensure it appears above other content
             }}
           >
             Your email has been sent successfully! Brayden will get back to you
