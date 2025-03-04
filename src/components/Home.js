@@ -27,7 +27,7 @@ const Home = () => {
       alignItems: "flex-start",
       flexDirection: "column",
       paddingTop: "10rem",
-      height: "100vh",
+      height: mobileView ? "100%" : "100vh",
       paddingLeft: mobileView ? "2rem" : "10rem",
       paddingRight: mobileView ? "2rem" : "10rem",
     },
@@ -80,7 +80,14 @@ const Home = () => {
 
   return (
     <Grid2 id="home" size={12} sx={styles.homeContainer}>
-      <video ref={videoRef} autoPlay loop muted style={styles.video}>
+      <video
+        ref={videoRef}
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={styles.video}
+      >
         <source src={background} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

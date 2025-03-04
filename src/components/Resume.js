@@ -54,7 +54,7 @@ const Resume = () => {
           <Button
             variant="contained"
             color="primary"
-            href={`${process.env.PUBLIC_URL}/resume.pdf`}
+            href={`/resume.pdf`}
             download="Brayden_Burden_Resume.pdf"
             sx={styles.downloadButton}
           >
