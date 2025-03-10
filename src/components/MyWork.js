@@ -4,6 +4,7 @@ import WorkDisplay from "./WorkDisplay";
 import fixdenImage from "../assets/fixden.png";
 import comingSoonImage from "../assets/comingSoon.jpg";
 import sidekickImage from "../assets/sidekick.png";
+import taskifyImage from "../assets/taskify.png";
 
 // fidenImages
 import fixdenLanding from "../assets/fixdenImages/fixdenLanding.png";
@@ -23,6 +24,14 @@ import sidekickFileRetrieval from "../assets/sidekickImages/sidekickFileRetreiva
 import sidekickPersonalization from "../assets/sidekickImages/sidekickPersonalization.jpg";
 import sidekickOrganization from "../assets/sidekickImages/sidekickOrganization.jpg";
 import { GithubOutlined } from "@ant-design/icons";
+
+// taskifyImages
+import taskifyLanding from "../assets/taskifyImages/taskifyLanding.png";
+import taskifyDashboard from "../assets/taskifyImages/taskifyDashboard.png";
+import taskifyCreateTask from "../assets/taskifyImages/taskifyCreateTask.png";
+import taskifyDetailedTaskView from "../assets/taskifyImages/taskifyDetailedTaskView.png";
+import taskifyProfile from "../assets/taskifyImages/taskifyProfile.png";
+import taskifyLightMode from "../assets/taskifyImages/taskifyLightMode.png";
 
 const MyWork = () => {
   // Sample list of work data
@@ -60,8 +69,8 @@ const MyWork = () => {
         "Sidekick AI is a personal assistant that helps with tasks like form filling, event planning, document management, and conversations, making information easily accessible.",
       header: "Sidekick AI",
       detailedDesc: [
-        "As the Lead Developer of Sidekick, I’m responsible for full-stack development, working closely with my current employer to turn requirements into reality. I developed every feature of the app, including the main chat section, file storage/uploading system, profile section, and subscriptions. I also configured the app for deployment on both Google Play Console and App Store Connect.",
-        "One of the biggest challenges I faced was implementing subscriptions. Initially, I tried building them without the RevenueCat API, but I ran into numerous errors and issues handling user input. The solution was to integrate RevenueCat, which simplified the process and made the system more reliable. Another challenge was the deployment process, as I was new to iOS and Android development. It took a lot of time to learn, configure, and perfect the builds, but I’m proud of overcoming these hurdles.",
+        "As the Lead Developer of Sidekick, I'm responsible for full-stack development, working closely with my current employer to turn requirements into reality. I developed every feature of the app, including the main chat section, file storage/uploading system, profile section, and subscriptions. I also configured the app for deployment on both Google Play Console and App Store Connect.",
+        "One of the biggest challenges I faced was implementing subscriptions. Initially, I tried building them without the RevenueCat API, but I ran into numerous errors and issues handling user input. The solution was to integrate RevenueCat, which simplified the process and made the system more reliable. Another challenge was the deployment process, as I was new to iOS and Android development. It took a lot of time to learn, configure, and perfect the builds, but I'm proud of overcoming these hurdles.",
       ],
       images: [
         {
@@ -83,12 +92,32 @@ const MyWork = () => {
     },
     {
       id: 3,
-      workImages: comingSoonImage,
-      workDesc: "More Projects are coming soon!",
-      header: "",
-      detailedDesc: [],
-      images: [fixdenImage, comingSoonImage, sidekickImage],
+      workImages: taskifyImage,
+      workDesc:
+        "Taskify is a modern task management app with an intuitive card interface for organizing work. Features include task prioritization, progress tracking, and subtask management.",
+      header: "Taskify",
+      detailedDesc: [
+        "Taskify is a modern task management application with an intuitive interface. It features a clean, card-based layout displaying tasks with priorities, due dates, and progress indicators. The application supports filtering by status and priority levels, helping users focus on what matters most.",
+        "The application's standout feature is its subtask management system. Users can break down complex tasks into smaller subtasks and track progress individually. With visual indicators, smooth animations, and an expandable interface showing task details, Taskify provides a powerful yet user-friendly experience.",
+      ],
+      images: [
+        { image: taskifyLanding, imageText: "Taskify landing page" },
+        { image: taskifyDashboard, imageText: "Main dashboard view" },
+        { image: taskifyCreateTask, imageText: "Task creation interface" },
+        { image: taskifyDetailedTaskView, imageText: "Detailed task view" },
+        { image: taskifyProfile, imageText: "User profile section" },
+        { image: taskifyLightMode, imageText: "Light mode interface" },
+      ],
+      infoLink: "https://github.com/BraydenBurden/taskify",
     },
+    // {
+    //   id: 4,
+    //   workImages: comingSoonImage,
+    //   workDesc: "More Projects are coming soon!",
+    //   header: "",
+    //   detailedDesc: [],
+    //   images: [fixdenImage, comingSoonImage, sidekickImage],
+    // },
   ];
 
   return (
